@@ -21,6 +21,7 @@ body {
     background: #E4E4E4;
 }
 
+/* General Styles */
 ::selection {
     color: #fff;
     background: #00bfff;
@@ -57,9 +58,9 @@ h1, h2, h3, h4, h5, h6 {
     background: #00bfff;
 }
 
-    .btn:hover {
-        background: #145AC4;
-    }
+.btn:hover {
+    background: #145AC4;
+}
 
 .btn, .form-control, .team-socials i {
     border-radius: 5px !important;
@@ -79,10 +80,10 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(255,255,255,0.15);
 }
 
-    .button-outline:hover {
-        color: #fff;
-        background: rgba(255,255,255,0.35);
-    }
+.button-outline:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.35);
+}
 
 a {
     color: #00bfff;
@@ -95,10 +96,10 @@ a {
     transition: all 0.2s linear;
 }
 
-    a:hover {
-        color: #0D63AD;
-        text-decoration: none;
-    }
+a:hover {
+    color: #0D63AD;
+    text-decoration: none;
+}
 
 .btn {
     border: 0px;
@@ -133,6 +134,51 @@ a {
     right: 20px;
     z-index: 5;
 }
+
+/* Logo and Text Styles */
+.logo-container {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+
+.navbar-logo {
+    height: 70px; /* Adjust the height as needed */
+    width: auto; /* Auto width to maintain aspect ratio */
+    
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+
+.logo-text {
+    display: inline-block; /* Ensure text stays inline with logo */
+    color: #fff; /* Example text color */
+    margin-left: 10px; /* Adjust margin between logo and text */
+}
+
+.logo-text b {
+    font-size: 18px; /* Example: Adjust font size */
+    line-height: 1; /* Example: Adjust line height */
+}
+
+.logo-text span {
+    font-size: 14px; /* Example: Adjust font size */
+    line-height: 1; /* Example: Adjust line height */
+}
+
+
+
+
+
+
+
+
 /* Header 
 ----------------------------------------------*/
 #section-top {
@@ -780,28 +826,36 @@ footer {
     .contact ul li i {
         margin-right: 15px;
     }
-/*Clients*/
-.clients #owl-demo .item {
-    background: none;
-}
 
-.clients .helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
 
-    .clients .helper img {
-        vertical-align: middle;
-        max-height: 70px;
-        max-width: 80%;
+
+
+    /*Clients*/
+
+
+
+    .clients #owl-demo .item {
+        background: none;
     }
-
-.clients .customNavigation > a {
-    font-size: 25px;
-    cursor: pointer;
-    margin: 0px 5px;
-}
+    
+    .clients .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    
+        .clients .helper img {
+            vertical-align: middle;
+            max-height: 70px;
+            max-width: 80%;
+        }
+    
+    .clients .customNavigation > a {
+        font-size: 25px;
+        cursor: pointer;
+        margin: 0px 5px;
+    }
+    
 
 @media (min-width: 768px) {
     .header .navbar-brand {
@@ -1117,33 +1171,3 @@ footer {
 
 
 
-
-.navbar-header {
-    display: flex;
-    align-items: center; /* Align items to the center vertically */
-}
-
-.logo-container {
-    display: flex;
-    align-items: center; /* Center align logo and text vertically */
-}
-
-.navbar-logo {
-    max-height: 100px; /* Adjust the height to fit your navbar */
-    margin-right: 10px; /* Add some space between the logo and the text */
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column; /* Stack text elements vertically */
-    text-align: left; /* Align text to the left */
-}
-
-.logo-text b {
-    margin: 0; /* Remove default margins */
-}
-
-.logo-text span {
-    font-size: 40px; /* Adjust as needed */
-    font-weight: normal;
-}
