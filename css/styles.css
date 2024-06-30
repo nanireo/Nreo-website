@@ -140,21 +140,14 @@ a:hover {
     position: absolute;
     top: 5px;
     left: 10px;
-}
-
-
-.navbar-logo {
-    height: 70px; /* Adjust the height as needed */
-    width: auto; /* Auto width to maintain aspect ratio */
-    
-}
-
-
-.logo-container {
     display: flex;
     align-items: center; /* Center items vertically */
 }
 
+.navbar-logo {
+    height: 70px; /* Adjust the height as needed */
+    width: auto; /* Auto width to maintain aspect ratio */
+}
 
 .logo-text {
     display: inline-block; /* Ensure text stays inline with logo */
@@ -172,7 +165,48 @@ a:hover {
     line-height: 1; /* Example: Adjust line height */
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 50px; /* Smaller logo height for mobile */
+    }
+    
+    .logo-text b {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
 
+    .logo-text span {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .logo-container {
+        top: 10px; /* Adjust position for mobile */
+        left: 5px; /* Adjust position for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo {
+        height: 40px; /* Smaller logo height for very small screens */
+    }
+    
+    .logo-text b {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+
+    .logo-text span {
+        font-size: 10px; /* Smaller font size for very small screens */
+    }
+
+    .logo-container {
+        top: 15px; /* Further adjust position for very small screens */
+        left: 5px; /* Adjust position for very small screens */
+    }
+
+    .logo-text {
+        margin-left: 5px; /* Reduce margin between logo and text */
+    }
+}
 
 
 
@@ -391,15 +425,21 @@ a:hover {
 .banner-container {
     width: 100%;
     position: relative;
-    padding: 0px;
+    padding: 0;
     box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
-    /*background: url("../images/banner-bg.jpg") no-repeat;*/
     background-size: 100% 100%;
     background-size: cover;
     margin-top: 60px;
     position: relative;
     border-bottom: 2px #00bfff solid;
 }
+
+@media (max-width: 768px) {
+    .banner-container {
+        margin-top: 0; /* Adjust or remove margin top for smaller screens */
+    }
+}
+
 
     .banner-container > img {
         width: 100%;
@@ -875,23 +915,34 @@ footer {
 
     /*Clients*/
 
-
-
     .clients #owl-demo .item {
         background: none;
+        text-align: center; /* Center align content */
+        position: relative; /* Ensure relative positioning */
     }
     
     .clients .helper {
-        display: inline-block;
-        height: 100%;
+        display: flex; /* Use flexbox for vertical alignment */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        height: 100%; /* Ensure full height */
+    }
+    
+    .clients .helper img {
+        max-height: 70px;
+        max-width: 80%;
         vertical-align: middle;
     }
     
-        .clients .helper img {
-            vertical-align: middle;
-            max-height: 70px;
-            max-width: 80%;
-        }
+    .clients .item h2 {
+        margin-top: 10px; /* Adjust as needed */
+        text-align: center; /* Center the text */
+        position: absolute; /* Position absolutely */
+        top: 50%; /* Move to the vertical center */
+        left: 0; /* Center horizontally */
+        width: 100%; /* Ensure full width */
+        transform: translateY(-50%); /* Adjust for vertical centering */
+    }
     
     .clients .customNavigation > a {
         font-size: 25px;
@@ -899,6 +950,8 @@ footer {
         margin: 0px 5px;
     }
     
+
+
 
 @media (min-width: 768px) {
     .header .navbar-brand {
