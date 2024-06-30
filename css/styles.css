@@ -294,7 +294,7 @@ a:hover {
 }
 
 #section-strapline {
-    background: #f00bfff;
+    background: #00bfff;
     line-height: 42px;
     clear: both;
 }
@@ -490,36 +490,79 @@ a:hover {
 }
 /* Services
     -------------------------------------------------*/
-.grid .text-content {
-    padding-left: 35%;
-}
 
-.grid .text-content {
-    display: block;
-    padding-left: 19%;
-    padding-right: 8%;
-}
 
-.grid .grid-item {
-}
 
-.grid .text-content h5 {
-    font-weight: bold;
-}
 
-.grid .grid-item .item-content {
-    display: block;
-    outline: none;
-    text-decoration: none;
-    padding: 20px 0;
-}
 
-.item-content .fa {
-    position: absolute;
-    color: #646464;
-    font-size: 4.5em;
-    top: 36px;
-}
+    #services .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #services .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #services .col-md-4 {
+        margin-bottom: 30px;
+    }
+    
+    #services .text-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #services .fa {
+        margin-bottom: 15px;
+    }
+    
+    #services .heading.text-center {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .grid .text-content {
+        padding-left: 35%;
+    }
+    
+    .grid .text-content {
+        display: block;
+        padding-left: 19%;
+        padding-right: 8%;
+    }
+    
+    .grid .grid-item {
+    }
+    
+    .grid .text-content h5 {
+        font-weight: bold;
+    }
+    
+    .grid .grid-item .item-content {
+        display: block;
+        outline: none;
+        text-decoration: none;
+        padding: 20px 0;
+    }
+    
+    .item-content .fa {
+        position: absolute;
+        color: #646464;
+        font-size: 4.5em;
+        top: 36px;
+    }
+    
+
+
+
+
+
+
 /* Team
     ---------------------------------------------------*/
 .team-member {
