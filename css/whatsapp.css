@@ -1,0 +1,24 @@
+/* WhatsApp Bubble Icon */
+.whatsapp-bubble {
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+    z-index: 1000;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* WhatsApp Bubble Icon Hover Effect */
+.whatsapp-bubble:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
