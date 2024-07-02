@@ -149,21 +149,7 @@ a:hover {
     width: auto; /* Auto width to maintain aspect ratio */
 }
 
-.logo-text {
-    display: inline-block; /* Ensure text stays inline with logo */
-    color: #fff; /* Example text color */
-    margin-left: 10px; /* Adjust margin between logo and text */
-}
 
-.logo-text b {
-    font-size: 18px; /* Example: Adjust font size */
-    line-height: 1; /* Example: Adjust line height */
-}
-
-.logo-text span {
-    font-size: 14px; /* Example: Adjust font size */
-    line-height: 1; /* Example: Adjust line height */
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -914,7 +900,6 @@ footer {
 
 
     /*Clients*/
-
     .clients #owl-demo .item {
         background: none;
         text-align: center; /* Center align content */
@@ -934,14 +919,20 @@ footer {
         vertical-align: middle;
     }
     
+    .clients .item {
+        text-align: center; /* Center align content */
+        position: relative; /* Ensure relative positioning */
+        padding: 10px; /* Adjust padding as needed */
+    }
+    
     .clients .item h2 {
         margin-top: 10px; /* Adjust as needed */
-        text-align: center; /* Center the text */
+        text-align: center; /* Center the text horizontally */
         position: absolute; /* Position absolutely */
         top: 50%; /* Move to the vertical center */
-        left: 0; /* Center horizontally */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for both vertical and horizontal centering */
         width: 100%; /* Ensure full width */
-        transform: translateY(-50%); /* Adjust for vertical centering */
     }
     
     .clients .customNavigation > a {
@@ -950,6 +941,20 @@ footer {
         margin: 0px 5px;
     }
     
+    #clients .heading {
+        margin: 0px;
+    }
+    
+    #clients {
+        background: #fff;
+    }
+    
+    .clients .owl-carousel {
+        display: flex;
+        justify-content: center; /* Center align the carousel items horizontally */
+    }
+    
+
 
 
 
@@ -1181,9 +1186,7 @@ footer {
         color: #FDFDFD;
     }
 
-#clients {
-    background: #fff;
-}
+
 /*Price table*/
 .flat .plan {
     border-radius: 0px;
@@ -1242,9 +1245,7 @@ footer {
     display: none;
 }
 
-#clients .heading {
-    margin: 0px;
-}
+
 
 .isotope-item {
     margin: 0px;
