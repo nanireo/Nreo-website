@@ -914,7 +914,7 @@ footer {
     }
     
     .clients .helper img {
-        max-height: 70px;
+        max-height: 100px;
         max-width: 80%;
         vertical-align: middle;
     }
